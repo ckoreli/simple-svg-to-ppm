@@ -75,6 +75,10 @@ int main(int argc, char **argv) {
 
     print_image(ppm, img, width, height);
 
+    fclose(svg);
+    fclose(ppm);
+    free(img);
+
     return 0;
 }
 
